@@ -279,7 +279,7 @@ async def something():
                         else:
                             wrror = await nn.reply(stderr.decode())
                         nnn = await wrror.reply(
-                            f"🔺 **Encoding of** `{bb2}` **Failed!**"
+                            f"🔺 **Encoding of** **Failed!**"
                         )
                         try:
                             os.remove(dl)
