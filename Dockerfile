@@ -1,10 +1,17 @@
-#FROM python:3.9.2-slim-buster
-FROM colserra/ffmpeg:alpha
-RUN mkdir /bot && chmod 777 /bot
-WORKDIR /bot
-ENV DEBIAN_FRONTEND=noninteractive
-ENV TZ=Africa/Lagos
-RUN apt -qq update && apt -qq install -y git wget pv jq python3-dev mediainfo
+FROM artemisfowl004/vid-compress
+RUN mkdir ./app
+RUN chmod 777 /app
+WORKDIR /app
+RUN apt -qq update --fix-missing
+RUN apt -qq install -y git \
+    python3 \
+    python3-pip \
+    wget \
+    zstd \
+    p7zip \
+    ffmpeg \
+    curl
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir -r requirements.txt
 COPY . .
-RUN pip3 install -r requirements.txt
-CMD ["bash","run.sh"]`
+CMD ["bash","run.sh"]
