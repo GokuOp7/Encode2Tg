@@ -101,7 +101,6 @@ async def upload2(bot, from_user_id, filepath, reply, thum):
         chat_id=from_user_id,
         force_document=True,
         thumb=thum,
-        caption=caption,
         progress=progress_for_pyrogram,
         progress_args=(bot, "Uploading 👘", reply, u_start),
     )
