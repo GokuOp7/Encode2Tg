@@ -74,33 +74,33 @@ async def start(event):
                 Button.url("SOURCE (Original)", url="github.com/1Danish-00/"),
                 Button.url("DEVELOPER", url="t.me/danish_00"),
             ],
-            [Button.url("Maintainer ✌️", url="t.me/itsjust_r")],
+            [Button.url("Maintainer ✨", url="t.me/DenjiXD17")],
         ],
     )
 
 
 async def help(event):
     await event.reply(
-        "**🐠 A Quality CompressorQueue**\n\n+This Bot Encode Videos With Negligible Quality Change.\n+Generate Sample Encoded Video\n+Easy to Use\n-Due to Quality Settings Bot Takes Time To Encode.\nSo Be patience Nd Send videos One By One After Completing.\nDont Spam Bot.\n\nJust Forward Video To Get Options"
+        "**Hlo, I am a Video Compressor Bot 💥 **\n\nThis Bot Encodes Videos.\nEasy to Use\nJust send videos i will Encode\nSo Be patience Nd Send videos One By One After Completing.\nDont Spam Bot.\n\nJust Forward Video To Get Options"
     )
 
 
 async def ihelp(event):
     await event.edit(
-        "**🐠 A Quality CompressorQueue**\n\n+This Bot Encode Videos With Negligible Quality Change.\n+Generate Sample Encoded Video\n+Screenshots Too\n+Easy to Use\n-Due to Quality Settings Bot Takes Time To Encode.\nSo Be patience Nd Send videos One By One After Completing.\nDont Spam Bot.\n\nJust Forward Video To Get Options",
+        "**Hlo, I am a Video Compressor Bot 💥 **\n\nThis Bot Encodes Videos.\nEasy to Use\nJust send videos i will Encode\nSo Be patience Nd Send videos One By One After Completing.\nDont Spam Bot.\n\nJust Forward Video To Get Options",
         buttons=[Button.inline("BACK", data="beck")],
     )
 
 
 async def beck(event):
     await event.edit(
-        f"Hi `{event.sender.first_name}`\nThis is A CompressorQueue Which Can Encode Videos.\nReduce Size of Videos With Negligible Quality Change\nU can Generate Samples/screenshots too.",
+        f"Hlo `{event.sender.first_name}`\nThis is A Compressor Bot Which Can Encode Videos.\nReduce Size of Videos With Negligible Quality Change.",
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
                 Button.url("SOURCE (Original)", url="github.com/1Danish-00/"),
                 Button.url("DEVELOPER", url="t.me/danish_00"),
             ],
-            [Button.url("Maintainer ✌️", url="t.me/itsjust_r")],
+            [Button.url("Maintainer ✨", url="t.me/DenjiXD17")],
         ],
-    )
+        )
