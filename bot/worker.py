@@ -376,7 +376,7 @@ async def qparse(q):
         name = namo
     bb2 = await parse(name, kk, aa)
     bb = bb2[0]
-    return bb
+    return bb, bb2
 
 
 async def pres(e):
