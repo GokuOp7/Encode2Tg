@@ -376,7 +376,7 @@ async def qparse(q):
         name = namo
     bb2 = await parse(name, kk, aa)
     bb = bb2[0]
-    return bb, bb2
+    return bb
 
 
 async def pres(e):
@@ -599,6 +599,7 @@ async def pencode(message):
         aa = kk.split(".")[-1]
         rr = f"encode"
         bb = kk.replace(f".{aa}", "[Encoded].mkv")
+        bb2 = bb
         out = f"{rr}/{bb}"
         thum = "thumb.jpg"
         dtime = ts(int((es - s).seconds) * 1000)
